@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Delegate_Calculator
 {
+    /// <summary>
+    /// Allows basic operations
+    /// </summary>
     class Calculator
     {
-        private delegate int Operation(int a, int b);
+        public static int Sum(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
