@@ -11,19 +11,11 @@ namespace Delegate_Calculator
     /// </summary>
     class Calculator
     {
-        public static int Sum(int a, int b)
-        {
-            return a + b;
-        }
+        public delegate int function(int a, int b);
 
-        public static int Sub(int a, int b)
+        public static void operation(function function, int x, int y)
         {
-            return a - b;
-        }
-
-        public static int Mult(int a, int b)
-        {
-            return a * b;
+            Console.WriteLine("The result is " + function(x, y));
         }
     }
 }

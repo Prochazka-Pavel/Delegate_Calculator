@@ -6,8 +6,13 @@ namespace Delegate_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Calculator.Sum(5, 6));
+            Calculator.operation(Add, 5, 6);
             Console.ReadKey();
+        }
+
+        public static int Add(int a, int b)
+        {
+            return a + b;
         }
     }
 }
