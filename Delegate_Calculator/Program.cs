@@ -6,7 +6,7 @@ namespace Delegate_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
